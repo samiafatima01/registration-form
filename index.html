@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             background: linear-gradient(to right, #a0c1ff, #d4e0ff);
         }
 
         .container {
             display: flex;
             max-width: 900px;
-            margin: 40px auto;
+            margin: 50px auto;
             box-shadow: 0 0 20px rgba(0,0,0,0.1);
             border-radius: 10px;
             overflow: hidden;
@@ -50,12 +53,13 @@
 
         input, select {
             width: 100%;
-            padding: 8px;
+            padding: 10px;
             border: none;
             border-bottom: 1px solid #ccc;
             background: transparent;
             color: inherit;
             outline: none;
+            box-sizing: border-box;
         }
 
         input::placeholder {
@@ -126,13 +130,13 @@
     <div class="right">
         <h2>Contact Details</h2>
         <label>Street + Nr</label>
-        <input type="text">
+        <input type="number">
 
         <label>Additional Information</label>
-        <input type="text">
+        <input type="number">
 
         <label>Zip Code</label>
-        <input type="text>
+        <input type="number">
 
         <label>Place</label>
         <select><option>Select</option></select>
@@ -141,17 +145,19 @@
         <select><option>Select</option></select>
 
         <label>Code +</label>
-        <input type="text" placeholder="+92">
+        <input type="number" placeholder="+92">
 
         <label>Phone Number</label>
-        <input type="text">
+        <input type="number" >
 
         <label>Your Email</label>
-        <input type="email">
+        <input type="email" >
 
-        <div class="checkbox">
-            <input type="checkbox"> I do accept the <a href="#" style="color: #ddd;">Terms and Conditions</a> of your site.
-        </div>
+       <div class="checkbox" style="display: flex; align-items: center; font-size: 14px;">
+    <input type="checkbox" style="margin-right: 8px;">
+    <span>I do accept the <a href="#" style="color: #ddd;">Terms and Conditions</a> of your site.</span>
+</div>
+
 
         <button class="btn">Register Badge</button>
     </div>
@@ -159,3 +165,6 @@
 
 </body>
 </html>
+
+
+<!-- Edited by Samia -->
