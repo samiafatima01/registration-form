@@ -153,10 +153,11 @@
         <label>Your Email</label>
         <input type="email" >
 
-       <div class="checkbox" style="display: flex; align-items: center; font-size: 14px;">
-    <input type="checkbox" style="margin-right: 8px;">
-    <span>I do accept the <a href="#" style="color: #ddd;">Terms and Conditions</a> of your site.</span>
+     <div class="checkbox-wrap">
+    <input type="checkbox" name="agree" id="agree">
+    <label for="agree">I agree to the Terms and Conditions</label>
 </div>
+
 
 
         <button class="btn">Register Badge</button>
@@ -165,6 +166,42 @@
 
 </body>
 </html>
+
+
+
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+  }
+
+  input,
+  button,
+  select,
+  textarea {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+
+
+.checkbox-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+}
+
 
 
 <!-- Edited by Samia -->
