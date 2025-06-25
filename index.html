@@ -28,10 +28,6 @@
             box-sizing: border-box;
         }
 
-        .left {
-            background-color: #ffffff;
-        }
-
         .right {
             background-color: #4338ca;
             color: white;
@@ -75,15 +71,6 @@
             color: #ccc;
         }
 
-        .checkbox {
-            margin-top: 20px;
-            font-size: 14px;
-        }
-
-        .checkbox input {
-            margin-right: 5px;
-        }
-
         .btn {
             margin-top: 20px;
             background-color: white;
@@ -99,28 +86,41 @@
             background-color: #eee;
         }
 
-        
         .checkbox-wrap {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 20px;
-    font-size: 14px;
-    color: white;
-    vertical-align: middle;
-}
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 20px;
+            font-size: 14px;
+            color: white;
+            line-height: 1.2;
+        }
 
-.checkbox-wrap input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
-    margin: 0;
-    vertical-align: middle;
-}
+        .checkbox-wrap input[type="checkbox"] {
+            transform: translateY(1px);
+        }
 
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                width: 90%;
+                padding: 20px;
+                margin: 20px auto;
+            }
+
+            .left, .right {
+                width: 100%;
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 20px;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
-
 <div class="container">
     <div class="left">
         <h2>General Information</h2>
@@ -167,66 +167,18 @@
         <input type="number" placeholder="+92">
 
         <label>Phone Number</label>
-        <input type="number" >
+        <input type="number">
 
         <label>Your Email</label>
-        <input type="email" >
+        <input type="email">
 
-     <div class="checkbox-wrap">
-    <input type="checkbox" name="agree" id="agree">
-    <label for="agree">I agree to the Terms and Conditions</label>
-</div>
-
-
+        <div class="checkbox-wrap">
+            <input type="checkbox" name="agree" id="agree">
+            <label for="agree">I agree to the Terms and Conditions</label>
+        </div>
 
         <button class="btn">Register Badge</button>
     </div>
 </div>
-
 </body>
 </html>
-
-
-
-
-@media (max-width: 600px) {
-  .container {
-    width: 90%;
-    padding: 10px;
-    margin: auto;
-  }
-
-  input,
-  button,
-  select,
-  textarea {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  h1 {
-    font-size: 20px;
-    text-align: center;
-  }
-}
-
-
-
-.checkbox-wrap {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 20px;
-    font-size: 14px;
-    color: white;
-    line-height: 1.2;
-}
-
-.checkbox-wrap input[type="checkbox"] {
-    transform: translateY(1px);
-}
-
-
-
-
-<!-- Edited by Samia fatima-->
